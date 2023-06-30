@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bulid": "npm install && npm run bulid",
+    "build": "npm install && npm run bulid",
     "start": "nodemon srver.js"
   },
   "author": "Reshmi Kumari",
