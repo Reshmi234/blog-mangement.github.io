@@ -1,0 +1,97 @@
+
+
+<%-include('../../layouts/Admin/header')%>
+<%-include('../../layouts/Admin/sidebar')%>
+<%-include('../../layouts/Admin/navbar')%>
+
+
+
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                  
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                           
+                          
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Fullname</th>
+                                            <th>EMAIL</th>
+                                            <th>gender</th>
+                                            <th>address</th>
+                                            
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                   
+                                   
+                                    <tbody>
+                                     <%user_data.map((data)=>{%>
+
+                                   
+                                       
+                                            <tr>
+                                            <td><%=data.full_name%></td>
+                                            <td><%=data.email%></td>
+                                               
+                                            <td><%=data.gender%></td>
+                                            <td><%=data.address%></td>
+                                           
+                                             <% if(data.status=== 'Active'){%>
+                                                <td><a href="/user-details/status-change/<%=data.id%>" class="btn btn-success">Active </a></td>
+                                             <% } else{%>
+                                      
+                                              <td><a href="/user-details/status-change/<%=data.id%>" class="btn btn-warning">Inactive </a></td>
+                                      
+                                           <%  } %> 
+                                
+                                           <!-- <td><a href="/user-details/delete/<%=data.id%>" class="btn btn-danger">Delete </a></td> -->
+                                        
+                                           <td>
+                                            <div class="dropdown">
+                                
+                                                <a type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown"><span
+                                                        class="bi bi-three-dots-vertical"></span></a>
+                                
+                                                <div class="dropdown-menu"
+                                                    aria-labelledby="dropdownMenuButton">
+                                
+                                                    
+                                                    <a class="dropdown-item"
+                                                        href="/user-details/delete/<%=data.id%>">Delete</a>
+                                                    
+                                                </div>
+                                            </div>
+                                
+                                        </td>
+                                        
+                                        
+                                    </tr>
+                               <% })%>
+                                  
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+            <%-include('../../layouts/Admin/footer')%>
+          

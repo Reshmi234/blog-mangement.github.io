@@ -1,0 +1,34 @@
+
+
+
+
+
+<%-include('../../layouts/Admin/header')%>
+<%-include('../../layouts/Admin/sidebar')%>
+<%-include('../../layouts/Admin/navbar')%>
+
+
+
+
+
+
+       <!-- Begin Page Content -->
+       <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <h1 class="h3 mb-4 text-gray-800"><span>
+        <a href="/admin/faq" class="bt-lg text-gray-800" style="text-decoration: none; font-size: 30px;"> &larr;</a>
+
+        </span> View FAQ</h1>
+
+
+        <h4><%- faq_details.question %></h4>
+        <p> <%-faq_details.answer %></p>
+
+    </div>
+    <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+    <%-include('../../layouts/Admin/footer')%>

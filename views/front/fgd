@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title><%=title%>!</title>
+  </head>
+
+<body class="bg-gradient-success">
+
+    <div class="container">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <!-- <div class="col-lg-5 d-none d-lg-block bg-register-image"></div> -->
+                    
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+
+                                <% if(success_message.length){%>
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <strong>hey!</strong><%=success_message%>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                
+                                <%} else if(error_message.length){%>
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <strong>hey!</strong> <%=error_message%>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                
+                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                            </div>
+                            <form action="/user/user-register" method="post" class="user">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">First Name</label>
+                                    <input type="text" name="first_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Last name</label>
+                                    <input type="text" name="last_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">email</label>
+                                    <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Password?</label>
+                                    <input type="text" name="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                  <div class="form-group">
+        
+                                    <input type="radio" id="html" name="gender" value="male">
+                                      <label for="html">Male</label>
+                                   
+                                    <input type="radio" id="html" name="gender" value="female" >
+                                      <label for="html">Female</label><br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Address</label>
+                                    <input type="text" name="address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                  </div>
+                                </div>
+                                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                    Register Account
+                                </a>
+                                <hr>
+                                <a href="index.html" class="btn btn-google btn-user btn-block">
+                                    <i class="fab fa-google fa-fw"></i> Register with Google
+                                </a>
+                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                                </a>
+                            </form>
+                            <hr>
+                            <div class="text-center">
+                                <a class="small" href="forgot-password.html">Forgot Password?</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="small" href="login.html">Already have an account? Login!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container-fluid">
+                    <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm" style="width: auto; display: inline-block;">
+                        <option value="10">10</option><option value="25">25</option>
+                        <option value="50">50</option><option value="100">100</option>
+                    </select>
+                    entries
+                
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      <% if(data.status=== 'Active'){%>
+                                            <td><a href="/blog-details/status-change/<%= data._id%>" class="btn btn-success">Active </a></td>
+                                         <% } else{%>
+                                  
+                                          <td><a href="/blog-details/status-change/<%= data._id%>" class="btn btn-warning">Inactive </a></td>
+                                  
+                                       <%  } %>
+                              
+                                       <td><a href="/blog-details/delete/<%= data._id%>" class="btn btn-warning">Delete </a></td>
+                                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   let heading_exist= await WriteBlog.find({heading:req.body.heading,_id:{$ne:req.body.id},isDeleted:false})
+             if(!_.isEmpty(heading_exist)){
+                req.flash('error_message', 'something wrong')
+                return res.redirect('/blog/edit-blog');
+                 
+             }
+             let description_exist= await WriteBlog.find({description:req.body.description,_id:{$ne:req.body.id},isDeleted:false})
+             if(!_.isEmpty(description_exist)){
+                req.flash('error_message', 'something wrong')
+                return res.redirect('/blog/edit-blog');
+                 
+             }
+             else{
+                 let blog_obj={
+                    category_id: req.body.category_id,
+                    heading:req.body.heading,
+                    description:req.body.description
+
+                 }
+                 let user_data = await WriteBlog.findOne({_id:req.body.id})
+                 console.log(user_data);
+                 if(!_.isEmpty(req.file)){
+                     req.body.image= req.file.filename;
+                     fs.unlinkSync(`../../public/uploads/${user_data.image}`);
+                     blog_obj.image= req.file.filename;
+                 }
+                 let updated_data = await WriteBlog.findByIdAndUpdate(req.body.id,blog_obj);
+                 console.log(updated_data);
+                 if(!_.isEmpty(updated_data)){
+                    req.flash('success_message', 'Blog is update')
+                    return res.redirect('/blog/list-blog' );
+
+                 }
+                 else{
+                    req.flash('error_message', 'something wrong')
+                    return res.redirect('/blog/list-blog' );
+                 }
+                 
+                 
+             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                async forgetPasswordUpdate(req,res){
+      try{
+         
+      //  const email =req.body.email
+       const user= await User.findOne({email: req.body.email})
+       console.log(user);
+       
+    if(!_.isEmpty(user)){
+      req.flash('error_message', 'someting error')
+      return res.redirect('/admin/show-logpage')
+    }
+
+      const random= randomstring.generate({
+         lenght:6,
+         charset: 'alphabetic'
+      })
+     console.log(random);
+     
+      let ecrypt_password= await bcrypt.hashSync(random,bcypt.genSaltSync(10))
+     let forget_pass_updated= await  User.updateOne({email:email},{$set:{password:ecrypt_password}})
+     
+       if(!_.isEmpty(forget_pass_updated)&&forget_pass_updated._id){
+         await Mailer.sendMail('reshureshmi234@gmail.com',user.email,"forget password",
+        "your new password",`${random}`)
+       
+         req.flash('success_message', 'pasword update ')
+            return res.redirect('/admin/show-logpage')
+
+       }
+   
+
+
+     
+      }catch(err){
+         console.log();
+      }
+  }
+     
+
+
+
+
+
+
+
+
+
+
+
+
+     let category_details = await Category.find({ status: "Active", isDeleted: false })
+let user_details = await User.findOne({ _id: req.user.id });
+let blog_details = await WriteBlog.find({ user_id: user_details._id, status: "Active", isDeleted: false })
+
+
+
+
+
+
+
+
+
+
+
+
+
+async categoryBlog(req, res) {
+        try {
+            let category_details = await Category.find({ status: "Active", isDeleted: false }).sort({ createdAt: -1 });
+            let category_data = await Category.findById({ _id: req.params.id });
+
+            let all_blogs = await Blog.aggregate([
+                {
+                    $match: {
+                        $expr: {
+                            $and: [
+                                { $eq: ['$isDeleted', false] },
+                                { $eq: ['$status', "Active"] },
+
+                            ]
+                        }
+                    }
+                },
+                {
+                    $lookup: {
+                        from: 'categories',
+                        let: {
+                            category_id: '$category_id'
+                        },
+                        pipeline: [
+                            {
+                                $match: {
+                                    $expr: {
+                                        $and: [
+                                            { $eq: ['$_id', '$$category_id'] },
+                                            { $eq: ['$isDeleted', false] }
+
+                                        ]
+                                    }
+                                }
+                            },
+
+                            {
+                                $project: {
+                                    isDeleted: 0,
+                                    updatedAt: 0,
+                                    createdAt: 0
+                                }
+                            }
+                        ],
+                        as: 'category_details',
+                    },
+
+                },
+                {
+                    $lookup: {
+                        from: 'users',
+                        let: {
+                            user_id: '$user_id'
+                        },
+                        pipeline: [
+                            {
+                                $match: {
+                                    $expr: {
+                                        $and: [
+                                            { $eq: ['$_id', '$$user_id'] },
+                                            { $eq: ['$isDeleted', false] }
+
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                $project: {
+                                    isDeleted: 0,
+                                    updatedAt: 0,
+                                    createdAt: 0
+                                }
+                            }
+                        ],
+                        as: 'user_details',
+                    }
+                },
+                {
+                    $unwind: '$user_details'
+
+                },
+
+                {
+                    $unwind: '$category_details'
+                },
+
+            ]);  
+
+            let blog_details = await Blog.aggregate([
+                {
+                    $match: {
+                        $expr: {
+                            $and: [
+                                { $eq: ['$category_id', category_data._id]},
+                                { $eq: ['$status', "Active"] },
+
+                                { $eq: ['$isDeleted', false] },
+                            ]
+                        }
+                    }
+                },
+                {
+                    $lookup: {
+                        from: 'categories',
+                        let: {
+                            category_id: '$category_id'
+                        },
+                        pipeline: [
+                            {
+                                $match: {
+                                    $expr: {
+                                        $and: [
+                                            { $eq: ['$_id', '$$category_id'] },
+                                            { $eq: ['$isDeleted', false] }
+
+                                        ]
+                                    }
+                                }
+                            },
+
+                            {
+                                $project: {
+                                    isDeleted: 0,
+                                    updatedAt: 0,
+                                    createdAt: 0
+                                }
+                            }
+                        ],
+                        as: 'category_details',
+                    },
+
+                },
+                {
+                    $lookup: {
+                        from: 'users',
+                        let: {
+                            user_id: '$user_id'
+                        },
+                        pipeline: [
+                            {
+                                $match: {
+                                    $expr: {
+                                        $and: [
+                                            { $eq: ['$_id', '$$user_id'] },
+                                            { $eq: ['$isDeleted', false] }
+
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                $project: {
+                                    isDeleted: 0,
+                                    updatedAt: 0,
+                                    createdAt: 0
+                                }
+                            }
+                        ],
+                        as: 'user_details',
+                    }
+                },
+                {
+                    $unwind: '$user_details'
+
+                },
+
+                {
+                    $unwind: '$category_details'
+                },
+
+            ]);
+
+            // console.log(blog_details);
+            res.render('category-blog', {
+                title: "Category Blog",
+                category_details,
+                user: req.front_user,
+                blog_details,
+                all_blogs
+
+            })
+        } catch (error) {
+            return error
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <% blog_details.map((data)=>{%>
+
+            <h3 class="category-title"><%= data.category_details.category_name%></h3>
+
+            <div class="d-md-flex post-entry-2 half">
+              <a href="/see-post/<%= data._id%>" class="me-4 thumbnail">
+                <img src="/front/uploads/<%= data.image%>" alt="" class="img-fluid">
+              </a>
+              <div>
+                <div class="post-meta"><span class="date"><%= data.category_details.category_name%></span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                <h3><a href="/see-post/<%= data._id%>"><%= data.heading%></a></h3>\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <td><%=data.cat_details.category_name%></td> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <main id="main">
+                                        <section id="contact" class="contact mb-5">
+                                          <div class="container" data-aos="fade-up">
+                                    
+                                            <div class="row">
+                                              <div class="col-lg-12 text-center mb-5">
+                                                <h1 class="page-title">Contact us</h1>
+                                              </div>
+                                            </div>
+                                    
+                                            <div class="row gy-4">
+                                    
+                                              <div class="col-md-4">
+                                                <div class="info-item">
+                                                  <i class="bi bi-geo-alt"></i>
+                                                  <h3>Address</h3>
+                                                  <address>A108 Adam Street, NY 535022, USA</address>
+                                                </div>
+                                              </div><!-- End Info Item -->
+                                    
+                                              <div class="col-md-4">
+                                                <div class="info-item info-item-borders">
+                                                  <i class="bi bi-phone"></i>
+                                                  <h3>Phone Number</h3>
+                                                  <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                                                </div>
+                                              </div><!-- End Info Item -->
+                                    
+                                              <div class="col-md-4">
+                                                <div class="info-item">
+                                                  <i class="bi bi-envelope"></i>
+                                                  <h3>Email</h3>
+                                                  <p><a href="mailto:info@example.com">info@example.com</a></p>
+                                                </div>
+                                              </div><!-- End Info Item -->
+                                    
+                                            </div>
+                                    
+                                            <div class="form mt-5">
+                                              <form action="/create-contact" method="post" role="form" class="form-control" required>
+                                                <div class="row">
+                                                  <div class="form-group col-md-6">
+                                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                                  </div>
+                                                  <div class="form-group col-md-6">
+                                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"required >
+                                                  </div>
+                                                </div>
+                                                <div class="form-group">
+                                                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"required >
+                                                </div>
+                                                <div class="form-group">
+                                                  <textarea class="form-control" name="message" rows="5" placeholder="Message" ></textarea>
+                                                </div>
+                                                <div class="my-3">
+                                                  <div class="loading">Loading</div>
+                                                  <div class="error-message"></div>
+                                                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                                                </div>
+                                                <div class="text-center"><button type="submit">Send Message</button></div>
+                                              </form>
+                                            </div><!-- End Contact Form -->
+                                    
+                                          </div>
+                                        </section>
+                                    
+                                      </main><!-- End #main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                       <main id="main">
+    <section>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-9" data-aos="fade-up">
+            <h3 class="category-title"><%=single_page.category_name%></h3>
+
+            <div class="d-md-flex post-entry-2 half">
+              <a href="" class="me-4 thumbnail">
+                <img src="/front/uploads/<%=single_page.image %>" alt="" class="img-fluid">
+              </a>
+              <div>
+                <p><%= single_page.heading %></p>
+                <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                <h3><a href=""></a></h3>
+                <p><%= single_page.description %></p>
+               
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<i class="glyphicon glyphicon-user">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="form-group">
+                  <label for="exampleInputPassword1">Image</label>
+                  <input type="file" name="image" class="form-control" id="image" placeholder="image">
+                </div>
+                <div class="form-group">
+                  <!-- <%= response %> -->
+                  <% if(!_.isEmpty(response.image)){%>
+                     
+                      <img src="../../front/uploads/<%=response.image %>" width="150px" height="150px">
+                  <%  } %>
+              </div>

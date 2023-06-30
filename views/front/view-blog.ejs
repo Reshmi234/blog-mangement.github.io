@@ -1,0 +1,38 @@
+<%-include('../../layouts/front/header')%>
+<%-include('../../layouts/front/navbar')%>
+
+  <main id="main">
+    <section>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-9" data-aos="fade-up">
+            <h3 class="category-title"><%=title%></h3>
+
+            <div class="d-md-flex post-entry-2 half">
+              <a href="single-post.html" class="me-4 thumbnail">
+                <img src="/front/uploads/<%=blog_details.image %>" alt="" class="img-fluid" width="400px">
+              </a>
+              <div>
+                <p><%= blog_details.heading %></p>
+                <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+                <h3><a href="single-post.html"></a></h3>
+                <p><%= blog_details.description %></p>
+               
+              </div>
+            </div>
+
+            
+          
+           
+
+
+     
+
+                
+
+           
+          
+
+            <%-include('../../layouts/front/catfooter')%>
+            <%-include('../../layouts/front/footer')%>

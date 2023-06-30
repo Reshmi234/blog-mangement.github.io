@@ -1,0 +1,23 @@
+<%-include('../../layouts/front/header')%>
+<%-include('../../layouts/front/navbar')%>
+
+<section class="single-post-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 post-content" data-aos="fade-up">
+
+        <!-- ======= Single Post Content ======= -->
+        <div class="single-post">
+        
+          <div class="post-meta"><span class="date">Business</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+          <h1 class="mb-5"><%= single_page.heading %></h1>
+          <p><span class="firstcharacter">L</span>
+          <figure class="my-4">
+            <img src="/front/uploads/<%=single_page.image %>" alt="" class="img-fluid">
+            <figcaption></figcaption>
+          </figure>
+          <p><%- single_page.description %></p>
+  
+          
+            <%-include('../../layouts/front/catfooter')%>
+            <%-include('../../layouts/front/footer')%>

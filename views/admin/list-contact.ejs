@@ -1,0 +1,76 @@
+
+
+<%-include('../../layouts/Admin/header')%>
+<%-include('../../layouts/Admin/sidebar')%>
+<%-include('../../layouts/Admin/navbar')%>
+
+
+
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                  
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                           
+                          
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>DATE</th>
+                                            <th>EMAIL</th>
+                                            <th>SUBJECT</th>
+                                            <th>MESSAGE</th>
+                                            
+                                            <th>Action</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                   
+                                   
+                                    <tbody>
+                                     <%contact_detalis.map((data)=>{%>
+
+                                   
+                                       
+                                            <tr>
+                                            <td><%=moment(data.date).format('MM-DD-YY')%></td>
+                                            <td><%=data.email%></td>
+                                               
+                                            <td><%=data.subject%></td>
+                                            <td><%=data.message%></td>
+                                           
+                                            
+                                      
+
+                                      
+                                        <td><a href="/contact/delete/<%=data._id%>" class="btn btn-danger">Delete</a></td>
+                                        
+
+                                     
+                                       
+                                        
+                                    </tr>
+                               <% })%>
+                                  
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+            <%-include('../../layouts/Admin/footer')%>
+          
